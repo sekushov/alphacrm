@@ -1,9 +1,14 @@
+.page {
+  background: url("../images/bg-mob.webp") no-repeat center/cover;
+  font-family: "Play", "Arial", "Helvetica", sans-serif;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
 h1 {
-  width: 100%;
-  left: 0;
-  margin: 20px auto;
   font-size: 40px;
   color: #fff;
+  margin: 20px 0;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
@@ -215,13 +220,6 @@ section {
   background: url(../images/icons/arrow1.svg) center center/contain no-repeat;
   width: 14px;
   height: 14px;
-}
-
-.page {
-  background: url("../images/bg-mob.webp") no-repeat center/cover;
-  font-family: "Play", "Arial", "Helvetica", sans-serif;
-  max-width: 360px;
-  margin: 0 auto;
 }
 
 .pagecrm {
