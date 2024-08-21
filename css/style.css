@@ -1,4 +1,10 @@
-h1 {
+.page {
+  background: url("../images/bg-mob.webp") no-repeat center/cover;
+  font-family: "Play", "Arial", "Helvetica", sans-serif;
+  max-width: 360px;
+  margin: 0 auto;
+}
+.page h1 {
   font-size: 40px;
   color: #fff;
   margin: 20px 0;
@@ -6,16 +12,14 @@ h1 {
   text-align: center;
   text-transform: uppercase;
 }
-
-h2 {
+.page h2 {
   font-size: 24px;
   color: #fff;
   font-weight: 700;
   line-height: 30px;
   text-align: center;
 }
-
-h3 {
+.page h3 {
   margin: 0;
   font-size: 20px;
   font-weight: 700;
@@ -24,8 +28,7 @@ h3 {
   text-transform: uppercase;
   color: #fff;
 }
-
-h4 {
+.page h4 {
   margin: 0;
   margin-top: 5px;
   font-size: 17px;
@@ -34,26 +37,21 @@ h4 {
   text-align: center;
   color: #D795FF;
 }
-
-img {
+.page img {
   width: 100%;
   height: auto;
 }
-
-section {
+.page section {
   margin-top: 75px;
   padding: 0 10px;
 }
-
-* {
+.page * {
   outline: none;
 }
-
-.img__wrapper {
+.page .img__wrapper {
   padding: 0 20px;
 }
-
-.btn {
+.page .btn {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -88,8 +86,7 @@ section {
   width: -moz-fit-content;
   width: fit-content;
 }
-
-.form {
+.page .form {
   padding: 44px 16px;
   background: linear-gradient(#541e75, #541e75) padding-box, linear-gradient(147.77deg, #9400FF 14.56%, rgba(198, 79, 135, 0.83) 86.63%) border-box;
   border: 2px solid transparent;
@@ -97,18 +94,18 @@ section {
   -webkit-box-shadow: 0px 0px 10px 0px #9662FF;
           box-shadow: 0px 0px 10px 0px #9662FF;
 }
-.form__title {
+.page .form__title {
   color: #d27cff;
   margin: 0;
 }
-.form__description {
+.page .form__description {
   margin-top: 8px;
   color: #fff;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
 }
-.form__input {
+.page .form__input {
   margin-top: 20px;
   padding: 0 19px;
   height: 60px;
@@ -121,59 +118,59 @@ section {
           box-sizing: border-box;
   font-size: 14px;
 }
-.form__input::-webkit-input-placeholder {
+.page .form__input::-webkit-input-placeholder {
   color: #fff;
   font-weight: 400;
 }
-.form__input::-moz-placeholder {
+.page .form__input::-moz-placeholder {
   color: #fff;
   font-weight: 400;
 }
-.form__input:-ms-input-placeholder {
+.page .form__input:-ms-input-placeholder {
   color: #fff;
   font-weight: 400;
 }
-.form__input::-ms-input-placeholder {
+.page .form__input::-ms-input-placeholder {
   color: #fff;
   font-weight: 400;
 }
-.form__input::placeholder {
+.page .form__input::placeholder {
   color: #fff;
   font-weight: 400;
 }
-.form__textarea {
+.page .form__textarea {
   min-height: 110px;
   padding-top: 10px;
   line-height: 20px;
   font-weight: 400;
 }
-.form__textarea::-webkit-input-placeholder {
+.page .form__textarea::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.5019607843);
 }
-.form__textarea::-moz-placeholder {
+.page .form__textarea::-moz-placeholder {
   color: rgba(255, 255, 255, 0.5019607843);
 }
-.form__textarea:-ms-input-placeholder {
+.page .form__textarea:-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.5019607843);
 }
-.form__textarea::-ms-input-placeholder {
+.page .form__textarea::-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.5019607843);
 }
-.form__textarea::placeholder {
+.page .form__textarea::placeholder {
   color: rgba(255, 255, 255, 0.5019607843);
 }
-.form__btn {
+.page .form__btn {
   width: 100%;
   margin-top: 20px;
   font-size: 16px;
   font-weight: 400;
 }
-.form__dropdown {
+.page .form__dropdown {
   position: relative;
   cursor: pointer;
   display: block;
 }
-.form__dropdown-menu {
+.page .form__dropdown-menu {
   display: none;
   position: absolute;
   width: 100%;
@@ -185,18 +182,18 @@ section {
   list-style: none;
   background: #611c8b;
 }
-.form__dropdown-menu li {
+.page .form__dropdown-menu li {
   margin: 0px 20px;
   margin-bottom: 8px;
   cursor: pointer;
 }
-.form__dropdown-menu li:hover {
+.page .form__dropdown-menu li:hover {
   text-shadow: 0px 0px 4px #D795FF;
 }
-.form__dropdown-menu.active {
+.page .form__dropdown-menu.active {
   display: block;
 }
-.form__select {
+.page .form__select {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -209,17 +206,10 @@ section {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.form__select-arrow {
+.page .form__select-arrow {
   background: url(../images/icons/arrow1.svg) center center/contain no-repeat;
   width: 14px;
   height: 14px;
-}
-
-.page {
-  background: url("../images/bg-mob.webp") no-repeat center/cover;
-  font-family: "Play", "Arial", "Helvetica", sans-serif;
-  max-width: 360px;
-  margin: 0 auto;
 }
 
 .pagecrm {
