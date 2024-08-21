@@ -1,5 +1,4 @@
 // подключение header - footer
-
 fetch('../header.html')
     .then(response => response.text())
     .then(html => document.querySelector('.header').innerHTML = html);
@@ -8,8 +7,14 @@ fetch('../footer.html')
     .then(html => document.querySelector('.footer').innerHTML = html);
 
 
-// работа с выпадающим списком select
+document.querySelectorAll('.btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
+    })
+})
 
+
+// работа с выпадающим списком select
 const dropdowns = document.querySelectorAll('.form__dropdown');
 dropdowns.forEach(dropdown => {
     const dropdownMenu = dropdown.querySelector('.form__dropdown-menu');
