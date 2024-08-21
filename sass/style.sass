@@ -1,0 +1,551 @@
+@import "variables"
+@import "media"
+
+h1
+    font-size: 40px
+    color: #fff
+    margin: 20px 0
+    font-weight: 700
+    text-align: center
+    text-transform: uppercase
+h2
+    font-size: 24px
+    color: #fff
+    font-weight: 700
+    line-height: 30px
+    text-align: center
+h3
+    margin: 0
+    font-size: 20px
+    font-weight: 700
+    line-height: 30px
+    text-align: center
+    text-transform: uppercase
+    color: #fff
+h4
+    margin: 0
+    margin-top: 5px
+    font-size: 17px
+    font-weight: 400
+    line-height: 20px
+    text-align: center
+    color: #D795FF
+
+
+
+img
+    width: 100%
+    height: auto
+
+section
+    margin-top: 75px
+    padding: 0 10px
+
+*
+    outline: none
+
+.img__wrapper
+    padding: 0 20px
+
+.btn
+    box-sizing: border-box
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    font-size: 20px
+    line-height: 23px
+    font-weight: 400
+    text-align: center
+    text-transform: uppercase
+    letter-spacing: 0.5px
+    color: #ffffff
+    background: linear-gradient(#1E0044, #1E0044) padding-box, linear-gradient(to right, #383fec, #23ffff) border-box
+    border-radius: 10px
+    border: 1px solid transparent
+    transition: background-color .2s ease-in-out, color .2s ease-in-out, border-color .2s ease-in-out
+    padding: 15px 40px
+    cursor: pointer
+    width: fit-content
+
+.form
+    padding: 44px 16px
+    background: linear-gradient($bgVioletWithBorder, $bgVioletWithBorder) padding-box, linear-gradient(147.77deg, #9400FF 14.56%, rgba(198, 79, 135, 0.83) 86.63%) border-box
+    border: 2px solid transparent
+    border-radius: 32px
+    box-shadow: 0px 0px 10px 0px #9662FF
+    &__title
+        color: #d27cff
+        margin: 0
+    &__description
+        margin-top: 8px
+        color: #fff
+        font-size: 14px
+        line-height: 20px
+        text-align: center
+    &__input
+        margin-top: 20px
+        padding: 0 19px
+        height: 60px
+        width: 100%
+        color: #fff
+        background: linear-gradient($bgVioletWithBorder, $bgVioletWithBorder) padding-box, linear-gradient(147.77deg, #9400ff80 14.56%, rgb(198 79 135 / 50%) 86.63%) border-box
+        border: 5px solid transparent
+        border-radius: 10px
+        box-sizing: border-box
+        font-size: 14px
+        &::placeholder
+            color: #fff
+            font-weight: 400
+    &__textarea
+        min-height: 110px
+        padding-top: 10px
+        line-height: 20px
+        font-weight: 400
+        &::placeholder
+            color: #ffffff80
+    
+    &__btn
+        width: 100%
+        margin-top: 20px
+        font-size: 16px
+        font-weight: 400
+    &__dropdown 
+        position: relative
+        cursor: pointer
+        display: block
+        &-menu
+            display: none
+            position: absolute
+            width: 100%
+            margin-top: 5px
+            padding: 15px 5px
+            left: -5px
+            border-radius: 10px
+            z-index: 9
+            list-style: none
+            background: #611c8b
+            li
+                margin: 0px 20px
+                margin-bottom: 8px
+                cursor: pointer
+                &:hover
+                    text-shadow: 0px 0px 4px #D795FF
+            &.active
+                display: block
+    &__select
+        width: 100%
+        height: 100%
+        display: flex
+        align-items: center
+        justify-content: space-between
+        &-arrow
+            background: url(../images/icons/arrow1.svg) center center / contain no-repeat
+            width: 14px
+            height: 14px
+
+.page
+    background: url("../images/bg-mob.webp") no-repeat center/cover
+    font-family: "Play", "Arial", "Helvetica", sans-serif
+
+.pagecrm
+    margin-top: 0
+    padding: 0
+    &_main
+        margin-top: 34px
+        background: url("../images/main/line.svg") no-repeat
+        &__btn
+            margin: 0 auto
+            padding: 5px 40px
+            font-size: 14px
+            border: 2px solid transparent
+            box-shadow: 0 0 10px 0 rgba(215, 149, 255, 1)
+            border-radius: 20px
+            background: linear-gradient(#B195FF, #B195FF) padding-box, linear-gradient(240.52deg, #59F8D2 7%, rgba(116, 223, 221, 0.43) 28.48%, rgba(161, 180, 239, 0.54) 64.29%, rgba(202, 142, 255, 0.55) 96.31%) border-box
+
+    &_features
+        &__block 
+            display: flex
+            width: 100%
+            margin-top: -15px
+            flex-wrap: wrap
+            align-items: flex-start
+            justify-content: center
+        &__list
+            display: flex
+            margin: 15px 0 0 0
+            padding: 0
+            flex-direction: row
+            align-items: flex-start
+            justify-content: space-around
+            flex-wrap: wrap
+            list-style-type: none
+        &__item 
+            width: 170px
+            text-align: center
+            padding: 0 10px
+            box-sizing: border-box
+            img
+                width: 100px
+        &__description
+            margin: 5px 0 0 0
+            font-size: 14px
+            font-weight: 700
+            color: #fff
+            line-height: 20px
+
+    &_comparison
+        &__block
+            min-height: 190px
+            margin-bottom: 20px
+            display: flex
+            flex-wrap: nowrap
+            border: 1px solid transparent
+            background: linear-gradient(grey, grey) padding-box, linear-gradient(147.77deg, #9400FF 14.56%, rgba(198, 79, 135, 0.83) 86.63%) border-box
+            border-radius: 10px
+            box-shadow: 0px 0px 20px 0px #D795FF
+            box-shadow: 0px 0px 4px 0px #D795FF
+        &__view
+            position: relative
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 50%
+            background: linear-gradient(230.07deg, #FFFFFF -50.81%, #0E9DDD 94.55%)
+            border-radius: 9px 0 0 9px
+        &__description
+            width: 50%
+            background: $bgViolet
+            border-radius: 0 9px 9px 0
+        &__title
+            margin: 10px
+            font-size: 16px
+            font-weight: 700
+            line-height: 20px
+            color: #c5b0ff
+        &__list
+            margin: 10px
+            padding-left: 30px
+            font-size: 14px
+            font-weight: 400
+            line-height: 14px
+            color: #fff
+            list-style-image: url("../images/icons/list-mark.svg")
+            & span
+                vertical-align: super
+                line-height: 0
+        &__item
+            margin: 10px 0
+        &__logo
+            position: absolute
+            top: 0
+            width: 100px
+            margin-top: 20px
+
+    &_form1
+        
+
+    &_for
+        &__block
+            margin-top: 45px
+            padding: 22px 26px 3px 26px
+            background: linear-gradient(90deg, rgba(177, 149, 255, 0.7) 0%, rgba(177, 149, 255, 0.42) 0.01%, rgba(44, 48, 83, 0) 100%)
+            border-radius: 20px
+        &__list
+            margin: 0
+            padding: 0
+            list-style-type: none
+        &__item
+            display: flex
+            justify-content: flex-start
+            align-items: center
+            margin-bottom: 30px
+        &__ico
+            width: 40px
+            height: 43px
+        &__text
+            margin: 0
+            padding: 0
+            color: #fff
+            font-size: 14px
+            line-height: 20px
+            margin-left: 9px
+
+    &_cases
+        &__block
+            display: flex
+            flex-wrap: wrap
+            margin-top: 35px
+        & .case
+            width: 100%
+            margin-top: 20px
+            padding: 30px 30px 25px 30px
+            background: linear-gradient($bgVioletWithBorder, $bgVioletWithBorder) padding-box, linear-gradient(147.77deg, #9400ff80 14.56%, rgb(198 79 135 / 50%) 86.63%) border-box
+            border: 2px solid transparent
+            border-radius: 30px
+            box-shadow: 0px 0px 10px 0px #D795FF80
+            &__img
+                width: 100%
+                height: 185px
+                padding: 20px 13px 13px 13px
+                background: linear-gradient(68.89deg, #1F0B32 3.44%, #1D1B7A 98.64%)
+                border-radius: 30px
+                box-sizing: border-box
+            &__logo
+                height: 130px
+                width: auto
+                margin: 0 auto
+                display: block
+            &__location
+                font-size: 10px
+                line-height: 20px
+                font-weight: 700
+                color: #D795FF
+                text-align: center
+                margin: 0
+            &__title
+                margin: 0
+                margin-top: 10px
+                font-size: 16px
+                font-weight: 700
+                text-align: left
+                color: #fff
+            &__description
+                margin: 10px 0
+                font-size: 14px
+                font-weight: 400
+                text-align: left
+                color: #fff
+            &__solution
+                margin: 0
+                margin-top: 10px
+                font-size: 14px
+                font-weight: 700
+                text-align: left
+                color: #D795FF
+            &__btn
+                width: 155px
+                height: 45px
+                margin: 12px auto 0 auto
+                font-size: 16px
+                line-height: 24px
+                font-weight: 700
+                text-transform: none
+
+    &_price__block
+        display: flex
+        flex-wrap: wrap
+        margin-top: 45px
+        & .solution
+            width: 100%
+            margin-bottom: 20px
+            padding: 17px 10px
+            background: linear-gradient(#110b31cc, #110b31cc) padding-box, linear-gradient(176.42deg, #B195FF -126.75%, #D795FF 97.05%) border-box
+            border: 2px solid transparent
+            border-radius: 15px
+            box-shadow: 0px 0px 20px 0px #D795FF
+            &__head
+                display: flex
+                justify-content: space-between
+                align-items: center
+                padding: 14px 10px
+                border-radius: 10px
+                background-color: #9E00FF26
+                margin-bottom: 15px
+            &__title
+                padding: 0 4px
+                font-size: 12px
+                font-weight: 400
+                color: #fff
+            &__cost
+                min-width: 110px
+                padding: 0 6px
+                font-size: 20px
+                font-weight: 700
+                text-align: right
+                color: #D795FF
+            &__list
+                margin: 5px 0
+                padding-left: 30px
+                font-size: 14px
+                font-weight: 400
+                line-height: 14px
+                color: #fff
+                list-style-image: url(../images/icons/list-mark.svg)
+            &__item
+                margin-bottom: 20px
+                & span
+                    vertical-align: super
+                    line-height: 0
+            &__btn
+                margin: 5px auto
+                padding: 20px 50px
+                font-size: 16px
+                font-weight: 400
+                font-family: "Play", "Arial", "Helvetica", sans-serif
+                box-shadow: 0px 0px 20px 0px rgb(162 45 247 / 30%)
+                &-icon
+                    width: 15px
+                    height: 15px
+                    margin-left: 10px
+                    background: url("../images/icons/arrow-top-right.svg") center / contain no-repeat
+
+    &_form2
+        .form
+            background: linear-gradient(#6a3fa2cc, #6a3fa2cc) padding-box, linear-gradient(266.77deg, #FFFFFF -11.99%, #D795FF 42.41%, #7BC2FE 91.84%) border-box
+            border: 2px solid transparent
+            padding: 44px 12px
+            margin-top: 45px
+            &__input
+                height: 51px
+                margin-top: 17px
+                background: linear-gradient(rgb(106 63 162 / 20%), rgb(106 63 162 / 20%)) padding-box, linear-gradient(266.77deg, hsl(0deg 0% 100% / 10%) -11.99%, hsl(277deg 100% 79% / 10%) 42.41%, hsl(207deg 98% 74% / 10%) 91.84%) border-box
+            &__dropdown-menu
+                background: #b975e2
+            &__select-arrow
+                background: url(../images/icons/arrow2.svg) center center/contain no-repeat
+                width: 20px
+                height: 20px
+            &__btn
+                margin-top: 17px
+
+    &_partners
+        &__block
+            display: flex
+            flex-direction: row-reverse
+            flex-wrap: wrap
+            align-items: center
+            margin-top: 20px
+        &__img
+            width: 100%
+            margin-bottom: 55px
+        &__list
+            width: 100%
+            margin: 0
+            padding: 0
+            list-style-type: none
+        &__item
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin-right: 10px
+            padding: 17px 0
+            font-size: 14px
+            font-weight: 400
+            color: #fff
+            &-ico
+                width: 17px
+                height: 17px
+                margin-left: 20px
+                background: url("../images/icons/arrow-right.svg") center / contain no-repeat
+        &__hr
+            width: 100%
+            height: 1px
+            margin: 0
+            padding: 0
+            border: none
+            background: linear-gradient(180deg, #00FFB7 0%, #D795FF 100%)
+
+    &_form3
+        margin-bottom: 10px
+        &__wrapper
+            padding-bottom: 10px
+            background: url('../images/form3/rectangle.webp') bottom right / contain no-repeat
+        &__title
+            font-size: 30px
+        &__subtitle
+            margin: 5px 25px
+            font-size: 20px
+            font-weight: 700
+            line-height: 30px
+            color: #fff
+            text-align: left
+
+        & .form
+            background: #44308a
+            padding: 11px 17px
+            margin: auto
+            margin-top: 10px
+            width: 250px
+            border: none
+            border-radius: 20px
+            &__input
+                height: 26px
+                margin-top: 8px
+                padding: 4px 10px
+                background:#FFFFFF80
+                border: 1px solid #0A142F4D
+                border-radius: 5px
+                font-size: 14px
+                color: #000
+                &::placeholder
+                    color: #383838
+            &__textarea
+                min-height: 70px
+            &__btn
+                font-size: 14px
+                width: 140px
+                margin: 8px auto 0 auto
+                padding: 4px 0
+                box-shadow: 0px 0px 10px 0px #A22DF71A
+.footer
+    margin-top: 75px
+    padding: 0 10px
+    h2
+        font-size: 32px
+        font-weight: 700
+    &__address, &__time, &__phone, &__email
+        margin: 0
+        padding: 0 20px
+        color: #ddd
+        font-size: 24px
+        font-weight: 400
+        line-height: 36px
+        a
+            color: #ddd
+            text-decoration: none
+    &__email a
+        text-decoration: underline
+    &__map
+        width: 340px
+        height: 200px
+        margin: 55px 0
+        overflow: hidden
+        box-sizing: border-box
+        border-radius: 10px
+        border: 2px solid transparent
+        background: linear-gradient(#fff, #fff) padding-box, linear-gradient(176.42deg, #B195FF -126.75%, #D795FF 97.05%) border-box
+        box-shadow: 0px 0px 20px 0px #D795FF
+    &__dev-mobile
+        width: 225px
+        margin: 0 auto
+        margin-bottom: 30px
+    &__social-list
+        list-style-type: none
+        margin: 0
+        display: flex
+        align-items: center
+        justify-content: center
+        padding: 0
+    &__social-link
+        height: 15px
+        width: auto
+        min-width: 20px
+        display: block
+        margin: 9px
+        &.tg
+            background: url(../images/icons/tg.svg) center / contain no-repeat
+        &.vk
+            background: url(../images/icons/vk.svg) center / contain no-repeat
+    &__bottom
+        margin: 12px
+        font-size: 10px
+        font-weight: 400
+        text-align: center
+        color: #fff
+        a
+            color: #fff
+            text-decoration: none
+
+.header
+    display: none
