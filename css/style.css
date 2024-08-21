@@ -6,9 +6,11 @@
 }
 
 h1 {
+  width: 100%;
+  left: 0;
+  margin: 20px auto;
   font-size: 40px;
   color: #fff;
-  margin: 20px 0;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
